@@ -25,8 +25,15 @@ ion-header-bar.bar-stable.bar.bar-header{
     border-bottom: 1px solid #444;
 }*/
 
-/*menu with submenus*/
+/*left menu with submenus*/
 .left-sidemenu.item {
+    border-color: #444;
+    background-color: #A4DEFD;
+    color: #111;
+}
+
+/*right menu with submenus*/
+.right-sidemenu.item {
     border-color: #444;
     background-color: #A4DEFD;
     color: #111;
@@ -39,12 +46,17 @@ ion-header-bar.bar-stable.bar.bar-header{
 }
 
 /*submenus*/
-.submenus.item {
-    padding-left: 2em;
+.left-submenus.item {
     border-color: #444;
     background-color: #A4DEFD;
     color: #111;
 }
+.right-submenus.item {
+    border-color: #444;
+    background-color: #A4DEFD;
+    color: #111;
+}
+
 
 /*background for the empty part of the side menu*/
 .item-other-background {

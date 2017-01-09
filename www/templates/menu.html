@@ -7,22 +7,22 @@
 
       <!-- left menu -->
       <ion-nav-buttons side="left">
-          <button ng-show="systemSetting.left_menu == 'button'" class="button button-icon button-clear {{systemSetting.left_button_icon}}" ng-click="loadpage('{{systemSetting.left_button_url}}')"></button>
-          <button ng-show="systemSetting.left_menu == 'menu'" class="button button-icon button-clear ion-navicon" menu-toggle="left">
+          <button ng-if="systemSetting.left_menu == 'button'" class="button button-icon button-clear {{systemSetting.left_button_icon}}" ng-click="loadpage('{{systemSetting.left_button_url}}')"></button>
+          <button ng-if="systemSetting.left_menu == 'menu'" class="button button-icon button-clear ion-navicon" menu-toggle="left">
           </button>
       </ion-nav-buttons>
 
       <!-- right menu -->
       <ion-nav-buttons side="right">
-          <button ng-show="systemSetting.right_menu == 'button'" class="button button-icon button-clear {{systemSetting.right_button_icon}}" ng-click="loadpage('{{systemSetting.right_button_url}}')"></button>
-          <button ng-show="systemSetting.right_menu == 'menu'" class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
+          <button ng-if="systemSetting.right_menu == 'button'" class="button button-icon button-clear {{systemSetting.right_button_icon}}" ng-click="loadpage('{{systemSetting.right_button_url}}')"></button>
+          <button ng-if="systemSetting.right_menu == 'menu'" class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
       </ion-nav-buttons>
 
     </ion-nav-bar>
 
     <!-- bottom menu -->
     <ion-nav-view name="menuContent">
-        <ion-tabs class="tabs-stable {{setTabType()}} tabs-color-active-positive" ng-show="systemSetting.bottom_menu">
+        <ion-tabs class="tabs-stable {{setTabType()}} tabs-color-active-positive" ng-if="systemSetting.bottom_menu">
             <ion-tab ng-repeat="item in systemSetting.bottom_menu_detail" title="{{item.title}}" icon-on="{{setTabIcon(item.icon)}}" icon-off="{{setTabIcon(item.icon)}}" ng-click="loadpage('{{item.url}}')" >
                 <ion-nav-view name="tab-dash"></ion-nav-view>
             </ion-tab>
@@ -50,7 +50,7 @@
           <ion-item ng-if="!isArray(item.link)" menu-close class="left-sidemenu without-submenu item-icon-left item-border-style" href="#/app/load" ng-click="checkLink('{{systemSetting.left_menu_root_url}}','{{item.link}}')">
               {{decodeText(item.title)}}
           </ion-item>
-          <ion-item menu-close class="submenus item-accordion"
+          <ion-item menu-close class="left-submenus item-icon-left item-border-style"
                     ng-repeat="submenu in item.link track by $index"
                     ng-if="isGroupShown(item)" ng-click="checkLink('{{systemSetting.left_menu_root_url}}','{{submenu.link}}')">
             {{decodeText(submenu.name)}}
@@ -62,10 +62,27 @@
         </ion-item> -->
 
         <!-- manual menu -->
-        <div ng-if="systemSetting.left_menu_type == 'manual'">
-          <ion-item menu-close class="left-sidemenu item-icon-left item-border-style" href="#/app/load" ng-click="loadpage('{{item.url}}')" ng-repeat="item in systemSetting.left_menu_detail">
-              <i ng-if="item.icon!='' && systemSetting.left_menu_icon" class="icon {{item.icon}}"></i>{{item.title}}
+        <div ng-if="systemSetting.left_menu_type == 'manual'" ng-repeat="item in systemSetting.left_menu_detail">
+          <!-- menu with submenu -->
+          <ion-item ng-if="item.has_submenu" class="left-sidemenu with-submenu item-icon-left item-border-style"
+                    ng-click="toggleGroup(item)"
+                    ng-class="{active: isGroupShown(item)}">
+              <i class="icon" ng-class="isGroupShown(item) ? systemSetting.left_menu_icon_expand : systemSetting.left_menu_icon_collapse"></i>
+              {{decodeText(item.title)}}
           </ion-item>
+          <!-- menu without submenu -->
+          <ion-item ng-if="!item.has_submenu" menu-close class="left-sidemenu without-submenu item-icon-left item-border-style" href="#/app/load" ng-click="loadpage('{{item.url}}')">
+              <i ng-if="item.icon!=''" class="icon {{item.icon}}"></i>{{decodeText(item.title)}}
+          </ion-item>
+          <!-- submenu -->
+          <ion-item menu-close class="left-submenus item-icon-left item-border-style"
+                    ng-repeat="submenu in item.submenu track by $index"
+                    ng-if="isGroupShown(item)" ng-click="loadpage('{{submenu.url}}')">
+            <i ng-if="submenu.icon!=''" class="icon {{submenu.icon}}"></i>{{decodeText(submenu.title)}}
+          </ion-item>
+          <!-- <ion-item menu-close class="left-sidemenu item-icon-left item-border-style" href="#/app/load" ng-click="loadpage('{{item.url}}')" ng-repeat="item in systemSetting.left_menu_detail">
+              <i ng-if="item.icon!='' && systemSetting.left_menu_icon" class="icon {{item.icon}}"></i>{{item.title}}
+          </ion-item> -->
         </div>
       </ion-list>
     </ion-content>
@@ -73,6 +90,67 @@
 
   <!-- right menu content -->
   <ion-side-menu side="right" ng-if="systemSetting.right_menu == 'menu'">
+    <ion-header-bar class="bar-stable">
+        <h1 class="title" width="100%">{{systemSetting.right_menu_design.header_title}}</h1>
+    </ion-header-bar>
+    <ion-content class="item-other-background">
+      <ion-list>
+
+        <!-- auto menu -->
+        <div ng-if="systemSetting.right_menu_type == 'auto'" ng-repeat="item in rightMenu_auto">
+          <!-- menu with submenu -->
+          <ion-item ng-if="isArray(item.link)" class="right-sidemenu with-submenu item-icon-left item-border-style"
+                    ng-click="toggleGroup(item)"
+                    ng-class="{active: isGroupShown(item)}">
+              <i class="icon" ng-class="isGroupShown(item) ? systemSetting.right_menu_icon_expand : systemSetting.right_menu_icon_collapse"></i>
+              {{decodeText(item.title)}}
+          </ion-item>
+          <!-- menu without submenu -->
+          <ion-item ng-if="!isArray(item.link)" menu-close class="right-sidemenu without-submenu item-icon-left item-border-style" href="#/app/load" ng-click="checkLink('{{systemSetting.right_menu_root_url}}','{{item.link}}')">
+              {{decodeText(item.title)}}
+          </ion-item>
+          <!-- submenu -->
+          <ion-item menu-close class="right-submenus item-icon-left item-border-style"
+                    ng-repeat="submenu in item.link track by $index"
+                    ng-if="isGroupShown(item)" ng-click="checkLink('{{systemSetting.right_menu_root_url}}','{{submenu.link}}')">
+              {{decodeText(submenu.name)}}
+          </ion-item>
+        </div>
+
+        <!-- <ion-item ng-if="systemSetting.left_menu_type == 'asd'" menu-close class="left-sidemenu item-icon-left item-border-style" href="#/app/load" ng-click="checkLink('{{systemSetting.left_menu_root_url}}','{{item.link}}')" ng-repeat="item in leftMenu_auto">
+            {{item.title}}
+        </ion-item> -->
+
+        <!-- manual menu -->
+        <div ng-if="systemSetting.right_menu_type == 'manual'" ng-repeat="item in systemSetting.right_menu_detail">
+          <!-- menu with submenu -->
+          <ion-item ng-if="item.has_submenu" class="right-sidemenu with-submenu item-icon-left item-border-style"
+                    ng-click="toggleGroup(item)"
+                    ng-class="{active: isGroupShown(item)}">
+              <i class="icon" ng-class="isGroupShown(item) ? systemSetting.right_menu_icon_expand : systemSetting.right_menu_icon_collapse"></i>
+              {{decodeText(item.title)}}
+          </ion-item>
+          <!-- menu without submenu -->
+          <ion-item ng-if="!item.has_submenu" menu-close class="right-sidemenu without-submenu item-icon-left item-border-style" href="#/app/load" ng-click="loadpage('{{item.url}}')">
+              <i ng-if="item.icon!=''" class="icon {{item.icon}}"></i>{{decodeText(item.title)}}
+          </ion-item>
+          <!-- submenu -->
+          <ion-item menu-close class="right-submenus item-icon-left item-border-style"
+                    ng-repeat="submenu in item.submenu track by $index"
+                    ng-if="isGroupShown(item)" ng-click="loadpage('{{submenu.url}}')">
+            <i ng-if="submenu.icon!=''" class="icon {{submenu.icon}}"></i>{{decodeText(submenu.title)}}
+          </ion-item>
+
+          <!-- <ion-item menu-close class="right-sidemenu item-icon-left item-border-style" href="#/app/load" ng-click="loadpage('{{item.url}}')">
+              <i ng-if="item.icon!='' && systemSetting.right_menu_icon" class="icon {{item.icon}}"></i>{{item.title}}
+          </ion-item> -->
+
+        </div>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+  <!-- <ion-side-menu side="right" ng-if="systemSetting.right_menu == 'menu'">
       <ion-header-bar class="bar-stable">
           <h1 class="title">{{systemSetting.right_menu_design.header_title}}</h1>
       </ion-header-bar>
@@ -83,6 +161,6 @@
               </ion-item>
           </ion-list>
       </ion-content>
-  </ion-side-menu>
+  </ion-side-menu> -->
 
 </ion-side-menus>

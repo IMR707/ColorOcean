@@ -9,6 +9,7 @@ angular.module('starter.controllers', [])
   //});
   //$scope.rightMenu = "";
   $rootScope.leftMenu_auto = "";
+  $rootScope.rightMenu_auto = "";
 
   $scope.toggleGroup = function(group) {
     if ($scope.isGroupShown(group)) {
@@ -51,13 +52,14 @@ angular.module('starter.controllers', [])
     }
   }
 
+  //not used, ignored for now
   $rootScope.hasSubmenu = function(rootLink,link){
   }
 
   //set menu icon
   $rootScope.setSideMenu = function(){
     $timeout(function(){
-      //console.log('inside icon function!');
+      //left side
       if($rootScope.systemSetting.left_menu_type == "auto"){
         Menus.getMarkers($rootScope.systemSetting.left_menu_api_url).then( function(result) {
           console.log(result);
@@ -71,8 +73,24 @@ angular.module('starter.controllers', [])
       }
     }, 100);
 
+    $timeout(function(){
+      //right side
+      if($rootScope.systemSetting.right_menu_type == "auto"){
+        Menus.getMarkers($rootScope.systemSetting.right_menu_api_url).then( function(result) {
+          console.log(result);
+          $rootScope.leftMenu_auto = result;
+          $rootScope.setSideMenu3();
+         });
+      }
+      //manual
+      else{
+        $rootScope.setSideMenu3();
+      }
+    }, 100);
+
   };
 
+  //left side set menu
   $rootScope.setSideMenu2 = function(){
     if($rootScope.systemSetting.left_menu == "menu"){
       //left side menu
@@ -96,6 +114,24 @@ angular.module('starter.controllers', [])
         $rootScope.leftMenuClass = "left-sidemenu without-submenu item-border-style item item-complex";
         $rootScope.leftMenuWithSubClass = "left-sidemenu with-submenu item-icon-right item-border-style item ng-binding";
       }
+      //submenu left
+      //NOT FINISHED YET
+      // if($rootScope.systemSetting.left_submenu_icon){
+      //   //console.log('yes icon left menu!');
+      //   if($rootScope.systemSetting.left_submenu_icon_position == "left"){
+      //     //console.log('left side!');
+      //     $rootScope.leftSubmenuClass = "left-submenu item-icon-left item-border-style item item-complex";
+      //   }
+      //   else{
+      //     //console.log('right side!');
+      //     $rootScope.leftMenuClass = "left-submenu item-icon-right item-border-style item item-complex";
+      //   }
+      //
+      // }
+      // else{
+      //   //console.log('no icon left menu!');
+      //   $rootScope.leftMenuClass = "left-submenu item-border-style item item-complex";
+      // }
 
       //assign left side
       $timeout(function(){
@@ -117,29 +153,75 @@ angular.module('starter.controllers', [])
       }, 100);
     }
 
+  }
+
+  //right side set menu
+  $rootScope.setSideMenu3 = function(){
     if($rootScope.systemSetting.right_menu == "menu"){
-      //$scope.rightMenu = "menu";
       //right side menu
+      //console.log('inside right if!');
       if($rootScope.systemSetting.right_menu_icon){
+        //console.log('yes icon right menu!');
         if($rootScope.systemSetting.right_menu_icon_position == "left"){
-          $rootScope.rightMenuClass = "right-sidemenu item-icon-left item-border-style item item-complex";
+          //console.log('left side!');
+          $rootScope.rightMenuClass = "right-sidemenu without-submenu item-icon-left item-border-style item item-complex";
+          $rootScope.rightMenuWithSubClass = "right-sidemenu with-submenu item-icon-left item-border-style item ng-binding";
         }
         else{
-          $rootScope.rightMenuClass = "right-sidemenu item-icon-right item-border-style item item-complex";
+          //console.log('right side!');
+          $rootScope.rightMenuClass = "right-sidemenu without-submenu item-icon-right item-border-style item item-complex";
+          $rootScope.rightMenuWithSubClass = "right-sidemenu with-submenu item-icon-right item-border-style item ng-binding";
         }
 
       }
       else{
-        $rootScope.rightMenuClass = "right-sidemenu item-border-style item item-complex";
+        //console.log('no icon right menu!');
+        $rootScope.rightMenuClass = "right-sidemenu without-submenu item-border-style item item-complex";
+        $rootScope.rightMenuWithSubClass = "right-sidemenu with-submenu item-icon-right item-border-style item ng-binding";
       }
 
       //assign right side
-      var list = document.getElementsByClassName("right-sidemenu");
-      elementArray = [].slice.call(list, 0);
-      for(var i=0;i<elementArray.length;i++){
-        list[i].className = $rootScope.rightMenuClass;
-      }
+      $timeout(function(){
+        var list = document.getElementsByClassName("right-sidemenu without-submenu");
+        //console.log(list);
+        //console.log(list.length);
+        for(var i =0 ; i < list.length ;i++){
+          //console.log("buat kiri");
+          list[i].className = $rootScope.rightMenuClass;
+        }
+
+        var list = document.getElementsByClassName("right-sidemenu with-submenu");
+        //console.log(list);
+        //console.log(list.length);
+        for(var i =0 ; i < list.length ;i++){
+          //console.log("buat kiri");
+          list[i].className = $rootScope.rightMenuWithSubClass;
+        }
+      }, 100);
     }
+    // if($rootScope.systemSetting.right_menu == "menu"){
+    //   //$scope.rightMenu = "menu";
+    //   //right side menu
+    //   if($rootScope.systemSetting.right_menu_icon){
+    //     if($rootScope.systemSetting.right_menu_icon_position == "left"){
+    //       $rootScope.rightMenuClass = "right-sidemenu item-icon-left item-border-style item item-complex";
+    //     }
+    //     else{
+    //       $rootScope.rightMenuClass = "right-sidemenu item-icon-right item-border-style item item-complex";
+    //     }
+    //
+    //   }
+    //   else{
+    //     $rootScope.rightMenuClass = "right-sidemenu item-border-style item item-complex";
+    //   }
+    //
+    //   //assign right side
+    //   var list = document.getElementsByClassName("right-sidemenu");
+    //   elementArray = [].slice.call(list, 0);
+    //   for(var i=0;i<elementArray.length;i++){
+    //     list[i].className = $rootScope.rightMenuClass;
+    //   }
+    // }
   }
 
   $rootScope.decodeText = function(text) {
