@@ -1,0 +1,113 @@
+
+{
+    "_COMMENT" : "//You can align the header to (left, right or center).",
+    "header_image": "<img src='img/vetop-logo.jpg' style='width: 130px; max-width: 130px;' />",
+    "header_align": "center",
+
+    "_COMMENT" : "//First landing page.",
+    "home_url": "http://vetopstorage.com/?mobile=yes",
+
+    "_COMMENT" : "//Settings for adding left menu. (menu, button or none)",
+    "left_menu": "menu",
+    "_COMMENT" : "//Edit this settings if you choose right_menu as (button).",
+    "left_button_icon": "ion-pizza",
+    "left_button_url": "http://vetopstorage.com/",
+    "_COMMENT" : "//Edit this settings if you choose right_menu as (menu).",
+    "_COMMENT" : "//Menu with icon?",
+    "left_menu_icon": true,
+    "_COMMENT" : "//You can choose between left and right for icon position.",
+    "left_menu_icon_position": "right",
+    "left_menu_icon_expand": "ion-ios-arrow-down",
+    "left_menu_icon_collapse": "ion-ios-arrow-right",
+    "left_menu_design": {
+        "header_title": "Menu"
+    },
+    "_COMMENT": "//You can choose how to add the menu (auto,manual). ",
+    "left_menu_type": "auto",
+    "_COMMENT": "//Auto left menu settings",
+    "_COMMENT": "//plugin used to create menu in the webpage",
+    "left_menu_plugin_name":"kuler_menu",
+    "_COMMENT": "//left_menu_root_url is used to add as links for the api url",
+    "left_menu_root_url": "http://vetopstorage.com/",
+    "left_menu_api_url": "http://vetopstorage.com/index.php?route=api/menu/en",
+    "_COMMENT": "//Manual left menu settings",
+    "left_menu_detail": [
+                        {
+                           "title": "Title 1",
+                           "url": "http://senheng.com.my/senhengmobile/",
+                           "icon": "ion-heart"
+                        },
+                        {
+                          "title": "Title 2",
+                          "url": "http://senheng.com.my/",
+                          "icon": ""
+                        },
+                        {
+                           "title": "Title Testing",
+                           "url": "http://senheng.com.my/",
+                           "icon": "ion-refresh"
+                        }
+                    ],
+
+
+    "_COMMENT" : "//Settings for adding right menu. (menu, button or none)",
+    "right_menu": "button",
+    "_COMMENT" : "//Edit this settings if you choose right_menu as (button).",
+    "right_button_icon": "ion-ios-cart",
+    "right_button_url": "http://cloone.my/demo/vetop/index.php?route=checkout/cart&mobile=yes",
+    "_COMMENT" : "//Edit this settings if you choose right_menu as (menu).",
+    "_COMMENT" : "//Menu with icon?",
+    "right_menu_icon": true,
+    "_COMMENT" : "//You can choose between left and right for icon position.",
+    "right_menu_icon_position": "left",
+    "right_menu_design": {
+          "header_title": "Right Title"
+    },
+    "right_menu_detail": [
+                           {
+                             "title": "Right Title 1",
+                             "url": "http://senheng.com.my/senhengmobile/",
+                             "icon": "ion-pizza"
+                           },
+                           {
+                             "title": "Right Title 1",
+                             "url": "http://senheng.com.my/",
+                             "icon": "ion-icecream"
+                           }
+                           ],
+
+
+    "_COMMENT" : "//For bottom_menu_icon, you can use (top,left,icon or none) ",
+    "bottom_menu": true,
+    "bottom_menu_icon": "top",
+    "bottom_menu_detail": [
+                          {
+                          "title": "Home",
+                          "url": "http://vetopstorage.com/",
+                          "icon": "ion-ios-home"
+                          },
+                          {
+                          "title": "About Us",
+                          "url": "http://cloone.my/demo/vetop/index.php?route=information/information&information_id=4&mobile=yes",
+                          "icon": "icomoon-vetop"
+                          },
+                          {
+                          "title": "Contact Us",
+                          "url": "http://vetopstorage.com/index.php?route=information/contact",
+                          "icon": "ion-ios-telephone"
+                          },
+                          {
+                          "title": "Account",
+                          "url": "http://vetopstorage.com/index.php?route=account/account",
+                          "icon": "ion-ios-person"
+                          }
+                          ],
+
+
+    "display": "standalone",
+    "icons": [{
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  }]
+}

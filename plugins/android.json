@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.cloone.flaxi"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.cloone.flaxi"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.cloone.flaxi"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.cloone.flaxi"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cloone.flaxi"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.cloone.flaxi"
+        }
+    },
+    "dependent_plugins": {}
+}
