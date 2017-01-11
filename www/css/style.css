@@ -1,0 +1,95 @@
+/*iframe setting */
+.holds-the-iframe {
+    /* iFrame Loader */
+    background:url("../img/loading/ripple.gif") center center no-repeat;
+}
+
+/*header bar customization including side menus header*/
+ion-header-bar.bar-stable.bar.bar-header{
+    color: #111;
+    background-color: #fff;
+}
+
+/* Left/Right Menu without submenu */
+.item .item-content {
+    color: #fff;
+    font-weight: normal;
+    background-color:#222222 !important;
+    /*border-top: 1px solid #444 !important;
+    border-bottom: 1px solid #444 !important;*/
+}
+
+/*Border for the side menu*/
+/*.item-border-style {
+    border-top: 1px solid #686a6a;
+    border-bottom: 1px solid #444;
+}*/
+
+/*left menu with submenus*/
+.left-sidemenu.item {
+    border-color: #444;
+    background-color: #222222;
+    color: #fff;
+}
+
+/*right menu with submenus*/
+.right-sidemenu.item {
+    border-color: #444;
+    background-color: #222222;
+    color: #fff;
+}
+
+/*menu when submenu expanded*/
+.left-sidemenu.item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-content, .item .item-content.active, .item .item-content.activated {
+    border-color: #444;
+    background-color: #222222;
+}
+
+/*submenus*/
+.left-submenus.item {
+    border-color: #444;
+    background-color: #222222;
+    color: #fff;
+}
+.right-submenus.item {
+    border-color: #444;
+    background-color: #222222;
+    color: #fff;
+}
+
+
+/*background for the empty part of the side menu*/
+.item-other-background {
+    background-color: #222222;
+}
+
+
+
+
+/*bottom tabs panel customization*/
+.tabs-stable > .tabs, .tabs.tabs-stable {
+    border-color: #444;
+    background-color: #222222;
+}
+
+/*bottom tabs menu*/
+ion-tabs.tabs-color-active-positive .tab-item {
+    color: #fff;
+}
+
+/*bottom tab menu when clicked*/
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated{
+  color: #fff;
+}
+
+/*margin space for tabs on the bottom*/
+.applyFooter{
+    margin-bottom: 44px !important;
+}
+
+.flag-icon{
+  -ms-transform: scale(0.6, 0.6); /* IE 9 */
+    -webkit-transform: scale(0.6, 0.6); /* Safari */
+    transform: scale(0.6, 0.6);
+    border-radius: 70%;
+}

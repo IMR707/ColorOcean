@@ -1,0 +1,349 @@
+
+{
+    "_COMMENT" : "//You can align the header to (left, right or center).",
+    "header_image": "<img src='img/logo.png' style='width: 50px; max-width: 130px;' />",
+    "header_align": "center",
+
+    "_COMMENT" : "//First landing page.",
+    "home_url": "http://cloone.my/demo/cocean/?mobile=yes",
+
+    "_COMMENT" : "//Settings for adding left menu. (menu, button or none)",
+    "left_menu": "menu",
+    "_COMMENT" : "//Left menu/button icon.",
+    "left_button_icon": "ion-navicon",
+    "left_button_url": "http://vetopstorage.com/",
+    "_COMMENT" : "//Edit this settings if you choose right_menu as (menu).",
+    "_COMMENT" : "//Menu with icon?",
+    "left_menu_icon": false,
+    "_COMMENT" : "//You can choose between left and right for icon position.",
+    "left_menu_icon_position": "right",
+    "left_menu_icon_expand": "ion-ios-arrow-down",
+    "left_menu_icon_collapse": "ion-ios-arrow-right",
+    "_COMMENT" : "//Submenu with icon?",
+    "left_submenu_icon": true,
+    "_COMMENT" : "//You can choose between left and right for submenu icon position.",
+    "left_submenu_icon_position": "right",
+    "left_menu_design": {
+        "header_title": "Menu"
+    },
+    "_COMMENT": "//You can choose how to add the menu (auto,manual). ",
+    "left_menu_type": "manual",
+    "_COMMENT": "//Auto left menu settings",
+    "_COMMENT": "//plugin used to create menu (kuler_menu,mlm,mega_menu)",
+    "left_menu_plugin_name":"mega_menu",
+    "_COMMENT": "//left_menu_root_url is used to add as links for the api url",
+    "left_menu_root_url": "http://vetopstorage.com/",
+    "left_menu_api_url": "http://vetopstorage.com/index.php?route=api/menu/en",
+    "_COMMENT": "//Manual left menu settings",
+    "left_menu_detail": [
+                        {
+                           "title": "Printer Machine",
+                           "url": "http://senheng.com.my/senhengmobile/",
+                           "icon": "ion-heart",
+                           "has_submenu": true,
+                           "submenu": [
+                                        {
+                                          "title": "UV Printer",
+                                          "url": "http://cloone.my/demo/cocean/uv-printer/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Album Printer",
+                                          "url": "http://cloone.my/demo/cocean/album-printer/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Solvent Printer",
+                                          "url": "http://cloone.my/demo/cocean/solvent-printer/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Sublimation Printer",
+                                          "url": "http://cloone.my/demo/cocean/sublimation-printer/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Cutting Machine",
+                                          "url": "http://cloone.my/demo/cocean/cutting-machine/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Others",
+                                          "url": "http://cloone.my/demo/cocean/others/",
+                                          "icon": ""
+                                        }
+
+
+                                      ]
+                        },
+                        {
+                          "title": "Ink",
+                          "url": "http://senheng.com.my/",
+                          "icon": "",
+                          "has_submenu": true,
+                          "submenu": [
+                                       {
+                                         "title": "UV Ink",
+                                         "url": "http://cloone.my/demo/cocean/uv-ink-2/",
+                                         "icon": ""
+                                       },
+                                       {
+                                         "title": "Eco Ink",
+                                         "url": "http://cloone.my/demo/cocean/eco-ink-4/",
+                                         "icon": ""
+                                       },
+                                       {
+                                         "title": "Solvent Ink",
+                                         "url": "http://cloone.my/demo/cocean/solvent-ink/",
+                                         "icon": ""
+                                       },
+                                       {
+                                         "title": "Sublimation Ink",
+                                         "url": "http://cloone.my/demo/cocean/sublimation-ink",
+                                         "icon": ""
+                                       },
+                                       {
+                                         "title": "Dye Base Ink",
+                                         "url": "http://cloone.my/demo/cocean/dye-base-ink",
+                                         "icon": ""
+                                       },
+                                       {
+                                         "title": "Others Ink",
+                                         "url": "http://cloone.my/demo/cocean/others-ink-2/",
+                                         "icon": ""
+                                       }
+
+                                     ]
+                        },
+                        {
+                           "title": "Media",
+                           "url": "http://senheng.com.my/",
+                           "icon": "",
+                           "has_submenu": true,
+                           "submenu": [
+                                        {
+                                          "title": "UV Media",
+                                          "url": "http://cloone.my/demo/cocean/uv-media/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Eco / Solvent Media",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Sublimation Media",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Dye Base Media",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Lamination Media",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Others Media",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        }
+
+                                      ]
+                        },
+                        {
+                           "title": "Accessories",
+                           "url": "http://senheng.com.my/",
+                           "icon": "",
+                           "has_submenu": true,
+                           "submenu": [
+                                        {
+                                          "title": "Print-Head",
+                                          "url": "http://cloone.my/demo/cocean/print-head/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Mother Board / Print-Head Board",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Damper / Capping",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Cable",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Pump / Motor",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Other Accessories",
+                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "icon": ""
+                                        }
+
+                                      ]
+                        },
+                        {
+                           "title": "Company Profile",
+                           "url": "http://cloone.my/demo/cocean/company-profile/",
+                           "icon": "",
+                           "has_submenu": false,
+                           "submenu": [
+                                        {
+                                          "title": "Right SubTitle 1",
+                                          "url": "http://senheng.com.my/senhengmobile/",
+                                          "icon": "ion-pizza"
+                                        },
+                                        {
+                                          "title": "Right SubTitle 2",
+                                          "url": "http://senheng.com.my/senhengmobile/",
+                                          "icon": "ion-pizza"
+                                        }
+
+                                      ]
+                        },
+                        {
+                           "title": "Company Partner",
+                           "url": "http://cloone.my/demo/cocean/company-partner/",
+                           "icon": "",
+                           "has_submenu": false,
+                           "submenu": [
+                                        {
+                                          "title": "Right SubTitle 1",
+                                          "url": "http://senheng.com.my/senhengmobile/",
+                                          "icon": "ion-pizza"
+                                        },
+                                        {
+                                          "title": "Right SubTitle 2",
+                                          "url": "http://senheng.com.my/senhengmobile/",
+                                          "icon": "ion-pizza"
+                                        }
+
+                                      ]
+                        },
+                        {
+                           "title": "Company Events",
+                           "url": "http://cloone.my/demo/cocean/company-events/",
+                           "icon": "",
+                           "has_submenu": false,
+                           "submenu": [
+                                        {
+                                          "title": "Right SubTitle 1",
+                                          "url": "http://senheng.com.my/senhengmobile/",
+                                          "icon": "ion-pizza"
+                                        },
+                                        {
+                                          "title": "Right SubTitle 2",
+                                          "url": "http://senheng.com.my/senhengmobile/",
+                                          "icon": "ion-pizza"
+                                        }
+
+                                      ]
+                        }
+                    ],
+
+
+    "_COMMENT" : "//Settings for adding right menu. (menu, button or none)",
+    "right_menu": "menu",
+    "_COMMENT" : "//Right menu/button icon.",
+    "right_button_icon": "ion-ios-world-outline",
+    "right_button_url": "http://cloone.my/demo/vetop/index.php?route=checkout/cart&mobile=yes",
+    "_COMMENT" : "//Edit this settings if you choose right_menu as (menu).",
+    "_COMMENT" : "//Menu with icon?",
+    "right_menu_icon": true,
+    "_COMMENT" : "//You can choose between left and right for icon position.",
+    "right_menu_icon_position": "left",
+    "right_menu_icon_expand": "ion-ios-arrow-down",
+    "right_menu_icon_collapse": "ion-ios-arrow-right",
+    "right_menu_design": {
+          "header_title": "Language"
+    },
+    "_COMMENT": "//You can choose how to add the menu (auto,manual). ",
+    "right_menu_type": "manual",
+    "_COMMENT": "//Auto right menu settings",
+    "_COMMENT": "//plugin used to create menu (kuler_menu,mlm,mega_menu)",
+    "right_menu_plugin_name":"kuler_menu",
+    "_COMMENT": "//right_menu_root_url is used to add as links for the api url",
+    "right_menu_root_url": "http://vetopstorage.com/",
+    "right_menu_api_url": "http://vetopstorage.com/index.php?route=api/menu/en",
+    "_COMMENT": "//Manual right menu settings",
+    "right_menu_detail": [
+                           {
+                             "title": "Malaysia",
+                             "url": "http://cloone.my/demo/cocean/download/#",
+                             "icon": "flag-icon flag-icon-my",
+                             "has_submenu": false,
+                             "submenu": [
+                                          {
+                                            "title": "Right SubTitle 1",
+                                            "url": "http://senheng.com.my/senhengmobile/",
+                                            "icon": "ion-pizza"
+                                          },
+                                          {
+                                            "title": "Right SubTitle 2",
+                                            "url": "http://senheng.com.my/senhengmobile/",
+                                            "icon": "ion-pizza"
+                                          }
+
+                                        ]
+                           },
+                           {
+                             "title": "台湾",
+                             "url": "http://cloone.my/demo/cocean/download/#",
+                             "icon": "flag-icon flag-icon-tw",
+                             "has_submenu": false,
+                             "submenu": [
+                                         {
+                                           "title": "English",
+                                           "url": "http://senheng.com.my/senhengmobile/",
+                                           "icon": "ion-pizza"
+                                         },
+                                         {
+                                           "title": "Chinese",
+                                           "url": "http://senheng.com.my/senhengmobile/",
+                                           "icon": "ion-pizza"
+                                         }
+                                        ]
+                           }
+                           ],
+
+
+    "_COMMENT" : "//For bottom_menu_icon, you can use (top,left,icon or none) ",
+    "bottom_menu": true,
+    "bottom_menu_icon": "left",
+    "bottom_menu_detail": [
+                          {
+                          "title": "HOME",
+                          "url": "http://cloone.my/demo/cocean/",
+                          "icon": "ion-ios-home"
+                          },
+                          {
+                          "title": "CONTACT",
+                          "url": "http://cloone.my/demo/cocean/contact/",
+                          "icon": "ion-ios-telephone"
+                          },
+                          {
+                          "title": "DOWNLOAD",
+                          "url": "http://cloone.my/demo/cocean/download/",
+                          "icon": "ion-ios-download"
+                          }
+                          ],
+
+
+    "display": "standalone",
+    "icons": [{
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  }]
+}
