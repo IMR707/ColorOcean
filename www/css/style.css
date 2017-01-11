@@ -2,6 +2,8 @@
 .holds-the-iframe {
     /* iFrame Loader */
     background:url("../img/loading/ripple.gif") center center no-repeat;
+    /* margin for tab */
+    padding-bottom: 45px;
 }
 
 /*header bar customization including side menus header*/

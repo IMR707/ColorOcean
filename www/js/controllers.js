@@ -241,7 +241,7 @@ angular.module('starter.controllers', [])
     $rootScope.system_callurl = CallURL;
     $rootScope.dwloadurl = "";
     //console.log($rootScope.system_callurl);
-    $rootScope.dwloadurl = $sce.trustAsResourceUrl($rootScope.system_callurl);
+    $rootScope.dwloadurl = $sce.trustAsResourceUrl($rootScope.system_callurl+"?"+(new Date()).getTime());
   };
 
   //set tab icon position
