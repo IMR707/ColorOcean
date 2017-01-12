@@ -8,6 +8,11 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
   //$scope.rightMenu = "";
+  // var monitor = setInterval(function(){
+  //     var elem = document.getElementById('iframe');
+  //     console.log(elem.contentWindow.location.href);
+  // }, 1000);
+
   $rootScope.leftMenu_auto = "";
   $rootScope.rightMenu_auto = "";
 
@@ -241,7 +246,14 @@ angular.module('starter.controllers', [])
     $rootScope.system_callurl = CallURL;
     $rootScope.dwloadurl = "";
     //console.log($rootScope.system_callurl);
-    $rootScope.dwloadurl = $sce.trustAsResourceUrl($rootScope.system_callurl+"?"+(new Date()).getTime());
+    //disable page cache by giving unique parameter each click
+    if ($rootScope.system_callurl.indexOf('?') > -1)
+    {
+      $rootScope.dwloadurl = $sce.trustAsResourceUrl($rootScope.system_callurl+"&"+(new Date()).getTime());
+    }
+    else{
+      $rootScope.dwloadurl = $sce.trustAsResourceUrl($rootScope.system_callurl+"?"+(new Date()).getTime());
+    }
   };
 
   //set tab icon position
