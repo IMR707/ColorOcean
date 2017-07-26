@@ -2,7 +2,8 @@
 //This app is developed using code-push plugin with 'cloonegit' Github account so that updates can be easily implemented without pushing the apps to play store.
 //For more information, visit https://github.com/Microsoft/cordova-plugin-code-push on how to use the plugin.
 //NOTE : the update does not work if the app version is changed in config.xml
-//Regards, Boon.
+//NOTE : The staging and production key for code push can be seen in index.html and can be changed on config.xml.
+//Regards, Boon
 
 
 // Ionic Starter App
