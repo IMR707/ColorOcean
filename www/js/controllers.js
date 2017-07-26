@@ -138,7 +138,7 @@ angular.module('starter.controllers', [])
       //   $rootScope.leftMenuClass = "left-submenu item-border-style item item-complex";
       // }
 
-      //assign left side
+      //assign left side//
       $timeout(function(){
         var list = document.getElementsByClassName("left-sidemenu without-submenu");
         //console.log(list);

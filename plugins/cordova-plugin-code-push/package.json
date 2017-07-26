@@ -1,0 +1,145 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-code-push@latest",
+        "scope": null,
+        "escapedName": "cordova-plugin-code-push",
+        "name": "cordova-plugin-code-push",
+        "rawSpec": "latest",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/cloone/Documents/Boon/Projects/ColorOcean/node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-code-push@latest",
+  "_id": "cordova-plugin-code-push@1.9.5-beta",
+  "_inCache": true,
+  "_location": "/cordova-plugin-code-push",
+  "_nodeVersion": "6.6.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-code-push-1.9.5-beta.tgz_1499176025494_0.9511137001682073"
+  },
+  "_npmUser": {
+    "name": "max-mironov",
+    "email": "v-maximi@microsoft.com"
+  },
+  "_npmVersion": "5.0.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-code-push@latest",
+    "scope": null,
+    "escapedName": "cordova-plugin-code-push",
+    "name": "cordova-plugin-code-push",
+    "rawSpec": "latest",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-code-push/-/cordova-plugin-code-push-1.9.5-beta.tgz",
+  "_shasum": "6ad950b54b958c0ebb68fd6033c81528f240a60a",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-code-push@latest",
+  "_where": "/Users/cloone/Documents/Boon/Projects/ColorOcean/node_modules",
+  "author": {
+    "name": "Microsoft Corporation"
+  },
+  "bugs": {
+    "url": "https://github.com/Microsoft/cordova-plugin-code-push/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-code-push",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "CodePush Plugin for Apache Cordova",
+  "devDependencies": {
+    "archiver": "latest",
+    "body-parser": "latest",
+    "del": "latest",
+    "express": "latest",
+    "gulp": "latest",
+    "gulp-insert": "latest",
+    "gulp-tslint": "latest",
+    "gulp-typescript": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest",
+    "mocha-junit-reporter": "latest",
+    "q": "latest",
+    "replace": "latest",
+    "run-sequence": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-+PNMMvT1ZO7430f12iFYIvFHFM0lEYuR2Byjae0q7HKjY4tGmBl/B0qM+G5KCC3RnK9KuBn4SUM4pkSEPd6VvQ==",
+    "shasum": "6ad950b54b958c0ebb68fd6033c81528f240a60a",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-code-push/-/cordova-plugin-code-push-1.9.5-beta.tgz"
+  },
+  "gitHead": "03e3c65dd0abd022e15086e4d341f6d349fe7e1a",
+  "homepage": "https://github.com/Microsoft/cordova-plugin-code-push#readme",
+  "keywords": [
+    "cordova",
+    "code",
+    "push",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "axemclion",
+      "email": "code@nparashuram.com"
+    },
+    {
+      "name": "bokang",
+      "email": "buptkang@gmail.com"
+    },
+    {
+      "name": "bretjohnson",
+      "email": "bret.johnson@microsoft.com"
+    },
+    {
+      "name": "max-mironov",
+      "email": "v-maximi@microsoft.com"
+    },
+    {
+      "name": "maximpop",
+      "email": "maximpop@microsoft.com"
+    },
+    {
+      "name": "pniko",
+      "email": "patrick.nikoletich@microsoft.com"
+    },
+    {
+      "name": "ryanjsalva",
+      "email": "ryanjsalva@gmail.com"
+    },
+    {
+      "name": "sergey-akhalkov",
+      "email": "v-seakha@microsoft.com"
+    },
+    {
+      "name": "silhouettes",
+      "email": "rich@rkhua.com"
+    }
+  ],
+  "name": "cordova-plugin-code-push",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Microsoft/cordova-plugin-code-push.git"
+  },
+  "version": "1.9.5-beta"
+}

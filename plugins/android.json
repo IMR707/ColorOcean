@@ -24,7 +24,29 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.cloone.flaxi"
+        },
+        "cordova-plugin-code-push": {
+            "PACKAGE_NAME": "com.cloone.colorocean"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "code-push": {
+            "PACKAGE_NAME": "com.cloone.colorocean"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.cloone.colorocean"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.cloone.colorocean"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.cloone.colorocean"
+        },
+        "cordova-plugin-zip": {
+            "PACKAGE_NAME": "com.cloone.colorocean"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.cloone.colorocean"
+        }
+    }
 }

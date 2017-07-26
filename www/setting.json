@@ -5,7 +5,7 @@
     "header_align": "center",
 
     "_COMMENT" : "//First landing page.",
-    "home_url": "http://cloone.my/demo/cocean/?mobile=yes",
+    "home_url": "http://colorocean.com.my/?mobile=yes",
 
     "_COMMENT" : "//Settings for adding left menu. (menu, button or none)",
     "left_menu": "menu",
@@ -44,32 +44,32 @@
                            "submenu": [
                                         {
                                           "title": "UV Printer",
-                                          "url": "http://cloone.my/demo/cocean/uv-printer/",
+                                          "url": "http://colorocean.com.my/uv-printer/",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Album Printer",
-                                          "url": "http://cloone.my/demo/cocean/album-printer/",
+                                          "url": "http://colorocean.com.my/album-printer/",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Solvent Printer",
-                                          "url": "http://cloone.my/demo/cocean/solvent-printer/",
+                                          "url": "http://colorocean.com.my/solvent-printer/",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Sublimation Printer",
-                                          "url": "http://cloone.my/demo/cocean/sublimation-printer/",
+                                          "url": "http://colorocean.com.my/sublimation-printer/",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Cutting Machine",
-                                          "url": "http://cloone.my/demo/cocean/cutting-machine/",
+                                          "url": "http://colorocean.com.my/cutting-machine/",
                                           "icon": ""
                                         },
                                         {
-                                          "title": "Others",
-                                          "url": "http://cloone.my/demo/cocean/others/",
+                                          "title": "Laminator",
+                                          "url": "http://colorocean.com.my/laminator/",
                                           "icon": ""
                                         }
 
@@ -84,32 +84,27 @@
                           "submenu": [
                                        {
                                          "title": "UV Ink",
-                                         "url": "http://cloone.my/demo/cocean/uv-ink-2/",
+                                         "url": "http://colorocean.com.my/uv-ink-2/",
                                          "icon": ""
                                        },
                                        {
                                          "title": "Eco Ink",
-                                         "url": "http://cloone.my/demo/cocean/eco-ink-4/",
+                                         "url": "http://colorocean.com.my/eco-ink-4/",
                                          "icon": ""
                                        },
                                        {
                                          "title": "Solvent Ink",
-                                         "url": "http://cloone.my/demo/cocean/solvent-ink/",
+                                         "url": "http://colorocean.com.my/solvent-ink/",
                                          "icon": ""
                                        },
                                        {
                                          "title": "Sublimation Ink",
-                                         "url": "http://cloone.my/demo/cocean/sublimation-ink",
+                                         "url": "http://colorocean.com.my/sublimation-ink",
                                          "icon": ""
                                        },
                                        {
                                          "title": "Dye Base Ink",
-                                         "url": "http://cloone.my/demo/cocean/dye-base-ink",
-                                         "icon": ""
-                                       },
-                                       {
-                                         "title": "Others Ink",
-                                         "url": "http://cloone.my/demo/cocean/others-ink-2/",
+                                         "url": "http://colorocean.com.my/dye-base-ink",
                                          "icon": ""
                                        }
 
@@ -123,32 +118,27 @@
                            "submenu": [
                                         {
                                           "title": "UV Media",
-                                          "url": "http://cloone.my/demo/cocean/uv-media/",
+                                          "url": "http://colorocean.com.my/uv-media/",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Eco / Solvent Media",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "url": "http://colorocean.com.my/eco-solvent-media",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Sublimation Media",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
-                                          "icon": ""
-                                        },
-                                        {
-                                          "title": "Dye Base Media",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "url": "http://colorocean.com.my/sublimation-media/",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Lamination Media",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "url": "http://colorocean.com.my/lamination-media/",
                                           "icon": ""
                                         },
                                         {
-                                          "title": "Others Media",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "title": "Wallpaper",
+                                          "url": "http://colorocean.com.my/wallpaper/",
                                           "icon": ""
                                         }
 
@@ -162,32 +152,77 @@
                            "submenu": [
                                         {
                                           "title": "Print-Head",
-                                          "url": "http://cloone.my/demo/cocean/print-head/",
+                                          "url": "http://colorocean.com.my/print-head/",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Mother Board / Print-Head Board",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "url": "http://colorocean.com.my/mother-boardprint-head-board/",
                                           "icon": ""
                                         },
                                         {
-                                          "title": "Damper / Capping",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "title": "Damper",
+                                          "url": "http://colorocean.com.my/dampercapping/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Capping",
+                                          "url": "http://colorocean.com.my/capping/",
                                           "icon": ""
                                         },
                                         {
                                           "title": "Cable",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "url": "http://colorocean.com.my/cable/",
                                           "icon": ""
                                         },
                                         {
-                                          "title": "Pump / Motor",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "title": "Ink Pump / Motor",
+                                          "url": "http://colorocean.com.my/ink-pumpmotor/",
                                           "icon": ""
                                         },
                                         {
-                                          "title": "Other Accessories",
-                                          "url": "http://cloone.my/demo/cocean/company-partner/#",
+                                          "title": "Sub tank / Ink level sensor / Ink supply part",
+                                          "url": "http://colorocean.com.my/sub-tank/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Filter",
+                                          "url": "http://colorocean.com.my/filter/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Valves",
+                                          "url": "http://colorocean.com.my/valves/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Ink Tube / Tube Connector",
+                                          "url": "http://colorocean.com.my/ink-tube/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Raster Sensor / Rasers / Motor",
+                                          "url": "http://colorocean.com.my/raser-raster-sensors-motor/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Pulleys",
+                                          "url": "http://colorocean.com.my/pulleys/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Belts",
+                                          "url": "http://colorocean.com.my/printer-timing-belts/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Print Head Connector",
+                                          "url": "http://colorocean.com.my/print-head-connector/",
+                                          "icon": ""
+                                        },
+                                        {
+                                          "title": "Print Head Tissue / Cleaning Stick",
+                                          "url": "http://colorocean.com.my/cleaning-tissue-stick/",
                                           "icon": ""
                                         }
 
@@ -195,7 +230,7 @@
                         },
                         {
                            "title": "Company Profile",
-                           "url": "http://cloone.my/demo/cocean/company-profile/",
+                           "url": "http://colorocean.com.my/company-profile/",
                            "icon": "",
                            "has_submenu": false,
                            "submenu": [
@@ -214,7 +249,7 @@
                         },
                         {
                            "title": "Company Partner",
-                           "url": "http://cloone.my/demo/cocean/company-partner/",
+                           "url": "http://colorocean.com.my/company-partner/",
                            "icon": "",
                            "has_submenu": false,
                            "submenu": [
@@ -233,7 +268,7 @@
                         },
                         {
                            "title": "Company Events",
-                           "url": "http://cloone.my/demo/cocean/company-events/",
+                           "url": "http://colorocean.com.my/company-events/",
                            "icon": "",
                            "has_submenu": false,
                            "submenu": [
@@ -280,7 +315,7 @@
     "right_menu_detail": [
                            {
                              "title": "Malaysia",
-                             "url": "http://cloone.my/demo/cocean/download/#",
+                             "url": "http://colorocean.com.my/download/#",
                              "icon": "flag-icon flag-icon-my",
                              "has_submenu": false,
                              "submenu": [
@@ -299,7 +334,7 @@
                            },
                            {
                              "title": "台湾",
-                             "url": "http://cloone.my/demo/cocean/download/#",
+                             "url": "http://colorocean.com.my/download/#",
                              "icon": "flag-icon flag-icon-tw",
                              "has_submenu": false,
                              "submenu": [
@@ -324,17 +359,17 @@
     "bottom_menu_detail": [
                           {
                           "title": "HOME",
-                          "url": "http://cloone.my/demo/cocean/",
+                          "url": "http://colorocean.com.my/",
                           "icon": "ion-ios-home"
                           },
                           {
                           "title": "CONTACT",
-                          "url": "http://cloone.my/demo/cocean/contact/",
+                          "url": "http://colorocean.com.my/contact/",
                           "icon": "ion-ios-telephone"
                           },
                           {
                           "title": "DOWNLOAD",
-                          "url": "http://cloone.my/demo/cocean/download/",
+                          "url": "http://colorocean.com.my/download/",
                           "icon": "ion-ios-download"
                           }
                           ],

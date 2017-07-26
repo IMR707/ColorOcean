@@ -25,6 +25,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
               });
 
   $ionicPlatform.ready(function() {
+    codePush.sync();
+
+    window.addEventListener("resume", function () {
+      codePush.sync();
+    });
+
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins.Keyboard) {

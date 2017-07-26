@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src https://codepush.azurewebsites.net http://localhost:* 'self' 'unsafe-inline' 'unsafe-eval'; media-src *">    -->
+
     <meta http-equiv="Content-Security-Policy"
          content="default-src *;
-                  style-src * 'self' 'unsafe-inline' 'unsafe-eval';
-                  script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+                  style-src * https://codepush.azurewebsites.net http://localhost:*  'self' 'unsafe-inline' 'unsafe-eval';
+                  script-src * 'self' 'unsafe-inline' 'unsafe-eval';
+                  media-src *;">
     <title></title>
 
     <link rel="manifest" href="manifest.json">
@@ -42,5 +45,15 @@
   <body ng-app="starter">
     <ion-nav-view></ion-nav-view>
   </body>
+
+  <!-- codepush android staging -->
+  <!-- <preference name="CodePushDeploymentKey" value="JszXAh9dTV57mASwlKSV236FuCaR904bc3fb-c034-4c6c-b9d7-06ee1f057112" /> -->
+  <!-- codepush android production -->
+  <!-- <preference name="CodePushDeploymentKey" value="MbrXjq0tFtGvLKob_AVn_2ipD-8_904bc3fb-c034-4c6c-b9d7-06ee1f057112" /> -->
+
+  <!-- codepush ios staging -->
+  <!-- <preference name="CodePushDeploymentKey" value="ORFNlKNGr3JasIgT12O-pAsJRGVi904bc3fb-c034-4c6c-b9d7-06ee1f057112" /> -->
+  <!-- codepush ios production -->
+  <!-- <preference name="CodePushDeploymentKey" value="WfFEUzO-hupSr40vvdMuYu1d2AhV904bc3fb-c034-4c6c-b9d7-06ee1f057112" /> -->
 
 </html>
