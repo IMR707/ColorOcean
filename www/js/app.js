@@ -17,6 +17,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .run(function($ionicPlatform, $rootScope, $http, $sce) {
     $rootScope.system_callurl = "";
     $rootScope.sideMenuIconClass = "left";
+    console.log('in run module')
 
      $http.get('setting.json')
      .success(function (data) {
@@ -33,6 +34,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
               });
 
   $ionicPlatform.ready(function() {
+    console.log('in platform ready module')
     codePush.sync();
 
     window.addEventListener("resume", function () {
@@ -50,6 +52,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
+    $rootScope.$apply();
   });
 
 
